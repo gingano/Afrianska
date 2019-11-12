@@ -1,0 +1,214 @@
+@import "variables"
+@import "fonts"
+
+.footer
+  .footer__bottom
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 982px
+
+    .footer__bottom__top-section
+      border-bottom: 1px solid $white-color
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 940px
+      margin: 70px 0 0 0
+      padding: 0 0 96px 0
+
+      .footer__bottom__top-section__title
+        width: 460px
+
+        .footer__bottom__top-section__title__heading
+          font-family: $font-family-Gilroy
+          font-size: 36px
+          font-weight: 300
+          line-height: 46px
+          letter-spacing: 0.05em
+          color: $white-color
+
+        .footer__bottom__top-section__title__paragraph
+          font-family: $font-family-Gilroy
+          font-size: 16px
+          line-height: 26px
+          letter-spacing: 0.05em
+          color: $white-color
+          opacity: 0.6
+
+      .footer__bottom__top-section__button
+        width: 220px
+        padding: 15px 0 15px 0
+        background: $blue-light-extra-color
+        border-radius: 10px
+        box-sizing: border-box
+        font-family: $font-family-Gilroy
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: $white-color
+        text-decoration: none
+
+    .footer__bottom__end-section
+      margin: 96px 0 0 0
+      display: flex
+      width: 737px
+      justify-content: space-between
+
+      .footer__bottom__end-section__info
+        width: 300px
+
+        .footer__bottom__end-section__info__name
+          width: 189px
+          display: flex
+          justify-content: space-between
+          align-items: center
+
+          .footer__bottom__end-section__info__name__heading
+            font-family: $font-family-Gilroy
+            font-size: 28px
+            font-weight: 300
+            line-height: 46px
+            letter-spacing: 0.02em
+            color: $white-color
+
+        .footer__bottom__end-section__info__section
+          display: flex
+          align-items: baseline
+          text-decoration: none
+
+          .footer__bottom__end-section__info__section__heading
+            font-family: $font-family-Gilroy
+            font-size: 16px
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: $white-color
+
+          .footer__bottom__end-section__info__section__text
+            margin: 0 0 0 16px
+            font-family: $font-family-Gilroy
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: $white-color
+
+      .footer__bottom__end-section__links
+        display: flex
+        flex-direction: column
+
+        .footer__bottom__end-section__links__heading
+          font-family: $font-family-Gilroy
+          margin: 23px 0 0 0
+          font-size: 28px
+          font-weight: 300
+          line-height: 46px
+          letter-spacing: 0.02em
+          color: $white-color
+
+        .footer__bottom__end-section__links__link
+          margin: 18px 0 0 0
+          font-family: $font-family-Gilroy
+          font-size: 16px
+          line-height: 26px
+          letter-spacing: 0.05em
+          color: $white-color
+          text-decoration: none
+
+    .footer__bottom__license
+      margin: 64px 0 64px 0
+      font-family: $font-family-Gilroy
+      font-size: 16px
+      line-height: 26px
+      letter-spacing: 0.05em
+      color: $white-color
+      opacity: 0.4
+
+  .footer__bg
+    margin: -940px 0 0 -18vw
+    border-radius: 0 200px 0 0
+    background: $blue-dark-light-color
+    width: 100%
+    height: 940px
+
+@media (max-width: 1700px)
+  .footer
+    .footer__bg
+      margin: -940px 0 0 -11vw
+
+@media (max-width: 1380px)
+  .footer
+    .footer__bg
+      border-radius: 0 100px 0 0
+      margin: -940px 0 0 -3vw
+
+@media (max-width: 1310px)
+  .footer
+    .footer__bg
+      border-radius: 0 100px 0 0
+      margin: -940px 0 0 0
+
+    .footer__bottom
+      width: 700px
+
+      .footer__bottom__top-section
+        width: 100%
+
+      .footer__bottom__end-section
+        width: 100%
+
+@media (max-width: 1000px)
+  .footer
+    .footer__bg
+      border-radius: 0 50px 0 0
+      margin: -1520px 0 0 0
+      height: 1520px
+
+    .footer__bottom
+      width: 700px
+
+      .footer__bottom__top-section
+        flex-direction: column
+        justify-content: space-between
+
+        .footer__bottom__top-section__button
+          margin: 70px 0 0 0
+
+      .footer__bottom__end-section
+        width: 100%
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+        .footer__bottom__end-section__info
+          .footer__bottom__end-section__info__name
+            margin: 0 auto
+
+          .footer__bottom__end-section__info__section
+            .footer__bottom__end-section__info__section__text
+              margin: 0 0 0 59px
+
+      .footer__bottom__license
+        margin: 64px auto
+
+@media (max-width: 720px)
+  .footer
+    .footer__bottom
+      width: 100%
+
+    .footer__bottom
+      .footer__bottom__top-section
+        width: 95%
+        margin: 70px auto 0 auto
+
+        .footer__bottom__top-section__title
+          text-align: center
+          width: 100%
+
+@media (max-width: 350px)
+  .footer
+    .footer__bg
+      height: 1600px
+      margin: -1600px 0 0 0
