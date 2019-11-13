@@ -1,90 +1,88 @@
 @import "variables"
 @import "fonts"
 
-.portfolio
+.portfolio__title
+  display: flex
+  align-items: center
+
+  .title__heading
+    width: 228px
+    font-family: $font-family-Gilroy
+    font-size: 36px
+    font-weight: 300
+    line-height: 46px
+    letter-spacing: 0.05em
+    color: $blue-dark-color
+
+  .title__paragraph
+    width: 523px
+    margin-left: 96px
+    font-family: $font-family-Gilroy
+    font-size: 16px
+    line-height: 26px
+    letter-spacing: 0.05em
+    color: $blue-dark-color
+    opacity: 0.6
+
+.portfolio__works
+  .works__item
+    display: block
+    width: 940px
+    height: 417px
+    margin: 100px auto 100px auto
+    border-radius: 10px
+    background-repeat: no-repeat
+    background-position: bottom left
+    background-image: url("../img/portfolio-item-1-img-addition.png"), linear-gradient(89.97deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%), url("../img/portfolio-item-1-img.png")
+
+  .item__heading
+    position: absolute
+    margin: 51px 0 0 548px
+    font-family: $font-family-Gilroy
+    font-size: 28px
+    font-weight: 300
+    line-height: 46px
+    letter-spacing: 0.05em
+    color: $white-color
+
+  .item__addition
+    position: absolute
+    margin: 107px 0 0 653px
+    font-family: $font-family-Gilroy
+    font-size: 16px
+    font-weight: 300
+    line-height: 26px
+    letter-spacing: 0.05em
+    color: $white-color
+
+@media (max-width: 1000px)
   .portfolio__title
-    display: flex
-    align-items: center
+    flex-direction: column
 
     .title__heading
-      width: 228px
-      font-family: $font-family-Gilroy
-      font-size: 36px
-      font-weight: 300
-      line-height: 46px
-      letter-spacing: 0.05em
-      color: $blue-dark-color
+      width: 98%
+      text-align: center
 
     .title__paragraph
-      width: 523px
-      margin-left: 96px
-      font-family: $font-family-Gilroy
-      font-size: 16px
-      line-height: 26px
-      letter-spacing: 0.05em
-      color: $blue-dark-color
-      opacity: 0.6
+      width: 98%
+      text-align: center
+      margin-left: 0
 
   .portfolio__works
     .works__item
-      display: block
-      width: 940px
-      height: 417px
-      margin: 100px auto 100px auto
-      border-radius: 10px
-      background-repeat: no-repeat
-      background-position: bottom left
-      background-image: url("../img/portfolio-item-1-img-addition.png"), linear-gradient(89.97deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%), url("../img/portfolio-item-1-img.png")
+      max-width: 940px
+      width: 98%
 
     .item__heading
-      position: absolute
-      margin: 51px 0 0 548px
-      font-family: $font-family-Gilroy
-      font-size: 28px
-      font-weight: 300
-      line-height: 46px
-      letter-spacing: 0.05em
-      color: $white-color
+      left: 0
+      right: 0
+      margin: 25px auto 0 auto
+      width: 95%
+      text-align: center
 
     .item__addition
-      position: absolute
-      margin: 107px 0 0 653px
-      font-family: $font-family-Gilroy
-      font-size: 16px
-      font-weight: 300
-      line-height: 26px
-      letter-spacing: 0.05em
-      color: $white-color
-
-@media (max-width: 1000px)
-  .portfolio
-    .portfolio__title
-      flex-direction: column
-
-      .title__heading
-        width: 98%
-        text-align: center
-
-      .title__paragraph
-        width: 98%
-        text-align: center
-        margin-left: 0
-
-    .portfolio__works
-      .works__item
-        max-width: 940px
-        width: 98%
-
-      .item__heading
-        left: 0
-        right: 0
-        margin: 25px auto 0 auto
-        width: 95%
-        text-align: center
-
-      .item__addition
-        left: 0
-        right: 0
-        margin: 130px auto 0 auto
-        width: 95%
-        text-align: center
+      left: 0
+      right: 0
+      margin: 130px auto 0 auto
+      width: 95%
+      text-align: center

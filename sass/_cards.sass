@@ -48,6 +48,7 @@
     background: $white-color
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
     border-radius: 10px
+    transition: box-shadow .5s
 
     .card__image
       align-self: center
@@ -84,6 +85,9 @@
     .link__image
       margin-left: 28px
 
+  .cards-container__card:hover
+    box-shadow: 5px 20px 50px rgba(8, 31, 56, 0.85)
+
 @media (max-width: 1310px)
   .cards
     .cards__heading
@@ -116,19 +120,18 @@
       margin: 50px 0 0 0
 
 @media (max-width: 430px)
-  .cards
-    .cards-container
-      .cards-container__card
-        width: 320px
+  .cards-container
+    .cards-container__card
+      width: 320px
 
-      .card__heading
-        font-size: 24px
+    .card__heading
+      font-size: 24px
 
-      .card__paragraph
-        font-size: 20px
+    .card__paragraph
+      font-size: 20px
 
-      .link__text
-        font-size: 18px
+    .link__text
+      font-size: 18px
 
 @media (max-width: 330px)
   .cards
