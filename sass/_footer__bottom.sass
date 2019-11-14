@@ -1,12 +1,19 @@
 @import "variables"
 @import "fonts"
 
-.footer__bottom
+.footer__bottom-container
+  background: linear-gradient(80deg, $blue-dark-light-color 50%, $blue-light-extra-color 50%)
+
+.bottom-container__bottom
+  font-family: $font-family-Gilroy
   margin: 0 auto
+  padding: 0 100px 0 0
   display: flex
   flex-direction: column
   align-items: flex-start
   width: 982px
+  border-radius: 0 200px 0 0
+  background: $blue-dark-light-color
 
 .bottom__top-section
   border-bottom: 1px solid $white-color
@@ -21,7 +28,6 @@
     width: 460px
 
   .title__heading
-    font-family: $font-family-Gilroy
     font-size: 36px
     font-weight: 300
     line-height: 46px
@@ -29,7 +35,6 @@
     color: $white-color
 
   .title__paragraph
-    font-family: $font-family-Gilroy
     font-size: 16px
     line-height: 26px
     letter-spacing: 0.05em
@@ -42,7 +47,6 @@
     background: $blue-light-extra-color
     border-radius: 10px
     box-sizing: border-box
-    font-family: $font-family-Gilroy
     font-size: 16px
     line-height: 26px
     text-align: center
@@ -70,7 +74,6 @@
       align-items: center
 
     .name__heading
-      font-family: $font-family-Gilroy
       font-size: 28px
       font-weight: 300
       line-height: 46px
@@ -83,7 +86,6 @@
       text-decoration: none
 
     .section__heading
-      font-family: $font-family-Gilroy
       font-size: 16px
       font-weight: 300
       line-height: 26px
@@ -92,7 +94,6 @@
 
     .section__text
       margin: 0 0 0 16px
-      font-family: $font-family-Gilroy
       font-size: 16px
       line-height: 26px
       letter-spacing: 0.05em
@@ -103,7 +104,6 @@
     flex-direction: column
 
     .links__heading
-      font-family: $font-family-Gilroy
       margin: 23px 0 0 0
       font-size: 28px
       font-weight: 300
@@ -113,7 +113,6 @@
 
     .links__link
       margin: 18px 0 0 0
-      font-family: $font-family-Gilroy
       font-size: 16px
       line-height: 26px
       letter-spacing: 0.05em
@@ -122,36 +121,20 @@
 
 .bottom__license
   margin: 64px 0 64px 0
-  font-family: $font-family-Gilroy
   font-size: 16px
   line-height: 26px
   letter-spacing: 0.05em
   color: $white-color
   opacity: 0.4
 
-.footer__bg
-  margin: -940px 0 0 -18vw
-  border-radius: 0 200px 0 0
-  background: $blue-dark-light-color
-  width: 100%
-  height: 940px
-
-@media (max-width: 1700px)
-  .footer__bg
-    margin: -940px 0 0 -11vw
-
 @media (max-width: 1380px)
-  .footer__bg
+  .bottom-container__bottom
     border-radius: 0 100px 0 0
-    margin: -940px 0 0 -3vw
 
 @media (max-width: 1310px)
-  .footer__bg
-    border-radius: 0 100px 0 0
-    margin: -940px 0 0 0
-
-  .footer__bottom
-    width: 700px
+  .bottom-container__bottom
+    width: 900px
+    padding: 0 50px 0 0
 
     .bottom__top-section
       width: 100%
@@ -160,39 +143,43 @@
       width: 100%
 
 @media (max-width: 1000px)
-  .footer__bg
+
+  .footer__bottom-container
+    background: $blue-dark-light-color
     border-radius: 0 50px 0 0
-    margin: -1520px 0 0 0
-    height: 1520px
 
-  .footer__bottom
+  .bottom-container__bottom
     width: 700px
+    padding: 0
 
-    .bottom__top-section
-      flex-direction: column
-      justify-content: space-between
+  .bottom__top-section
+    flex-direction: column
+    justify-content: space-between
 
-      .top-section__button
-        margin: 70px 0 0 0
+    .top-section__button
+      margin: 70px 0 0 0
 
-    .bottom__end-section
-      width: 100%
-      flex-direction: column
-      align-items: center
-      text-align: center
+  .top-section__title
+    text-align: center
 
-      .info__name
-        margin: 0 auto
+  .bottom__end-section
+    width: 100%
+    flex-direction: column
+    align-items: center
+    text-align: center
 
-      .info__section
-        .section__text
-          margin: 0 0 0 59px
+    .info__name
+      margin: 0 auto
 
-    .bottom__license
-      margin: 64px auto
+    .info__section
+      .section__text
+        margin: 0 0 0 59px
+
+  .bottom__license
+    margin: 64px auto
 
 @media (max-width: 720px)
-  .footer__bottom
+  .bottom-container__bottom
     width: 100%
 
   .bottom__top-section
@@ -202,8 +189,3 @@
     .top-section__title
       text-align: center
       width: 100%
-
-@media (max-width: 350px)
-  .footer__bg
-    height: 1600px
-    margin: -1600px 0 0 0

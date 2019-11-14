@@ -3,10 +3,10 @@
 
 .cards
   padding: 192px 0 200px 0
+  font-family: $font-family-Gilroy
 
   .cards__heading
     width: 363px
-    font-family: $font-family-Gilroy
     font-size: 36px
     font-weight: 300
     line-height: 46px
@@ -54,7 +54,6 @@
       align-self: center
 
     .card__heading
-      font-family: $font-family-Gilroy
       margin-top: 56px
       font-size: 20px
       font-weight: 300
@@ -63,7 +62,6 @@
       color: $blue-dark-color
 
     .card__paragraph
-      font-family: $font-family-Gilroy
       font-size: 16px
       line-height: 26px
       letter-spacing: 0.05em
@@ -76,7 +74,6 @@
       height: 30px
 
     .link__text
-      font-family: $font-family-Gilroy
       font-size: 14px
       line-height: 30px
       letter-spacing: 0.05em
@@ -84,6 +81,10 @@
 
     .link__image
       margin-left: 28px
+      transition: margin-left .5s
+
+    .link__image:hover
+      margin-left: 38px
 
   .cards-container__card:hover
     box-shadow: 5px 20px 50px rgba(8, 31, 56, 0.85)
